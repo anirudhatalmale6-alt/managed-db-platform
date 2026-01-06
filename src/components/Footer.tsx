@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           <div className="col-span-2">
             <Link href="/" className="flex items-center gap-2">
-              <Database className="h-8 w-8 text-purple-500" />
+              <Database className="h-8 w-8 text-cyan-500" />
               <span className="text-xl font-bold text-white">CloudDB</span>
             </Link>
             <p className="mt-4 text-sm max-w-xs">

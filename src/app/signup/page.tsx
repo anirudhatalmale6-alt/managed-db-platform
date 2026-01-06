@@ -71,10 +71,10 @@ export default function SignupPage() {
   return (
     <div className="min-h-screen bg-gray-950 flex">
       {/* Left side - Branding */}
-      <div className="hidden lg:flex lg:flex-1 bg-gradient-to-br from-purple-900/20 via-gray-900 to-gray-950 items-center justify-center p-12">
+      <div className="hidden lg:flex lg:flex-1 bg-gradient-to-br from-cyan-900/20 via-gray-900 to-gray-950 items-center justify-center p-12">
         <div className="max-w-lg">
           <Link href="/" className="flex items-center gap-2 mb-12">
-            <Database className="h-10 w-10 text-purple-500" />
+            <Database className="h-10 w-10 text-cyan-500" />
             <span className="text-2xl font-bold text-white">CloudDB</span>
           </Link>
 
@@ -93,8 +93,8 @@ export default function SignupPage() {
               '24/7 expert support',
             ].map((feature) => (
               <div key={feature} className="flex items-center gap-3 text-gray-300">
-                <div className="h-5 w-5 rounded-full bg-purple-500/20 flex items-center justify-center">
-                  <Check className="h-3 w-3 text-purple-400" />
+                <div className="h-5 w-5 rounded-full bg-cyan-500/20 flex items-center justify-center">
+                  <Check className="h-3 w-3 text-cyan-400" />
                 </div>
                 {feature}
               </div>
@@ -117,7 +117,7 @@ export default function SignupPage() {
         <div className="mx-auto w-full max-w-sm">
           <div className="lg:hidden mb-8">
             <Link href="/" className="flex items-center gap-2">
-              <Database className="h-8 w-8 text-purple-500" />
+              <Database className="h-8 w-8 text-cyan-500" />
               <span className="text-xl font-bold text-white">CloudDB</span>
             </Link>
           </div>
@@ -145,7 +145,7 @@ export default function SignupPage() {
                 required
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all"
                 placeholder="John Doe"
               />
             </div>
@@ -162,7 +162,7 @@ export default function SignupPage() {
                 required
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all"
                 placeholder="you@company.com"
               />
             </div>
@@ -177,7 +177,7 @@ export default function SignupPage() {
                 type="text"
                 value={formData.company}
                 onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                className="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all"
                 placeholder="Your company"
               />
             </div>
@@ -194,7 +194,7 @@ export default function SignupPage() {
                   required
                   value={formData.password}
                   onChange={(e) => setFormData({ ...formData, password: e.target.value })}
-                  className="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all"
                   placeholder="Create a password"
                 />
                 <button
@@ -228,15 +228,15 @@ export default function SignupPage() {
                 type="checkbox"
                 checked={formData.acceptTerms}
                 onChange={(e) => setFormData({ ...formData, acceptTerms: e.target.checked })}
-                className="h-4 w-4 mt-0.5 bg-gray-900 border-gray-700 rounded text-purple-600 focus:ring-purple-500 focus:ring-offset-gray-950"
+                className="h-4 w-4 mt-0.5 bg-gray-900 border-gray-700 rounded text-cyan-600 focus:ring-cyan-500 focus:ring-offset-gray-950"
               />
               <label htmlFor="terms" className="ml-2 block text-sm text-gray-400">
                 I agree to the{' '}
-                <Link href="/terms" className="text-purple-400 hover:text-purple-300">
+                <Link href="/terms" className="text-cyan-400 hover:text-cyan-300">
                   Terms of Service
                 </Link>{' '}
                 and{' '}
-                <Link href="/privacy" className="text-purple-400 hover:text-purple-300">
+                <Link href="/privacy" className="text-cyan-400 hover:text-cyan-300">
                   Privacy Policy
                 </Link>
               </label>
@@ -245,7 +245,7 @@ export default function SignupPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-lg text-white bg-purple-600 hover:bg-purple-500 focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-950 font-medium transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-lg text-white bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-400 hover:to-teal-400 focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 focus:ring-offset-gray-950 font-medium transition-all disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {loading ? 'Creating account...' : 'Start free trial'}
               {!loading && <ArrowRight className="h-4 w-4" />}
@@ -283,7 +283,7 @@ export default function SignupPage() {
 
           <p className="mt-8 text-center text-gray-500">
             Already have an account?{' '}
-            <Link href="/login" className="text-purple-400 hover:text-purple-300 font-medium">
+            <Link href="/login" className="text-cyan-400 hover:text-cyan-300 font-medium">
               Sign in
             </Link>
           </p>

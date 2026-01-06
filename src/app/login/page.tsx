@@ -51,7 +51,7 @@ export default function LoginPage() {
       <div className="flex-1 flex flex-col justify-center px-4 sm:px-6 lg:px-20 xl:px-24">
         <div className="mx-auto w-full max-w-sm">
           <Link href="/" className="flex items-center gap-2 mb-8">
-            <Database className="h-8 w-8 text-purple-500" />
+            <Database className="h-8 w-8 text-cyan-500" />
             <span className="text-xl font-bold text-white">CloudDB</span>
           </Link>
 
@@ -79,7 +79,7 @@ export default function LoginPage() {
                 required
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all"
                 placeholder="you@company.com"
               />
             </div>
@@ -89,7 +89,7 @@ export default function LoginPage() {
                 <label htmlFor="password" className="block text-sm font-medium text-gray-300">
                   Password
                 </label>
-                <Link href="/forgot-password" className="text-sm text-purple-400 hover:text-purple-300">
+                <Link href="/forgot-password" className="text-sm text-cyan-400 hover:text-cyan-300">
                   Forgot password?
                 </Link>
               </div>
@@ -102,7 +102,7 @@ export default function LoginPage() {
                   required
                   value={formData.password}
                   onChange={(e) => setFormData({ ...formData, password: e.target.value })}
-                  className="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all"
                   placeholder="Enter your password"
                 />
                 <button
@@ -118,7 +118,7 @@ export default function LoginPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-lg text-white bg-purple-600 hover:bg-purple-500 focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-950 font-medium transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-lg text-white bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-400 hover:to-teal-400 focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 focus:ring-offset-gray-950 font-medium transition-all disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {loading ? 'Signing in...' : 'Sign in'}
               {!loading && <ArrowRight className="h-4 w-4" />}
@@ -156,7 +156,7 @@ export default function LoginPage() {
 
           <p className="mt-8 text-center text-gray-500">
             Don&apos;t have an account?{' '}
-            <Link href="/signup" className="text-purple-400 hover:text-purple-300 font-medium">
+            <Link href="/signup" className="text-cyan-400 hover:text-cyan-300 font-medium">
               Sign up for free
             </Link>
           </p>
@@ -164,7 +164,7 @@ export default function LoginPage() {
       </div>
 
       {/* Right side - Branding */}
-      <div className="hidden lg:flex lg:flex-1 bg-gradient-to-br from-purple-900/20 via-gray-900 to-gray-950 items-center justify-center p-12">
+      <div className="hidden lg:flex lg:flex-1 bg-gradient-to-br from-cyan-900/20 via-gray-900 to-gray-950 items-center justify-center p-12">
         <div className="max-w-lg text-center">
           <div className="flex justify-center gap-4 mb-8">
             <span className="text-5xl">🐬</span>

@@ -24,7 +24,7 @@ export default function ForgotPasswordPage() {
     <div className="min-h-screen bg-gray-950 flex flex-col justify-center px-4 sm:px-6 lg:px-8">
       <div className="mx-auto w-full max-w-sm">
         <Link href="/" className="flex items-center justify-center gap-2 mb-8">
-          <Database className="h-8 w-8 text-purple-500" />
+          <Database className="h-8 w-8 text-cyan-500" />
           <span className="text-xl font-bold text-white">CloudDB</span>
         </Link>
 
@@ -47,7 +47,7 @@ export default function ForgotPasswordPage() {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all"
                   placeholder="you@company.com"
                 />
               </div>
@@ -55,7 +55,7 @@ export default function ForgotPasswordPage() {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-lg text-white bg-purple-600 hover:bg-purple-500 focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-950 font-medium transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-lg text-white bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-400 hover:to-teal-400 focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 focus:ring-offset-gray-950 font-medium transition-all disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {loading ? (
                   'Sending...'
@@ -82,7 +82,7 @@ export default function ForgotPasswordPage() {
               Didn&apos;t receive the email? Check your spam folder or{' '}
               <button
                 onClick={() => setSubmitted(false)}
-                className="text-purple-400 hover:text-purple-300"
+                className="text-cyan-400 hover:text-cyan-300"
               >
                 try again
               </button>

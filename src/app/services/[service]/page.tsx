@@ -214,7 +214,7 @@ export default function ServicePage({ params }: { params: Promise<{ service: str
       <div className="min-h-screen bg-gray-950 flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-white mb-4">Service Not Found</h1>
-          <Link href="/" className="text-purple-400 hover:text-purple-300">
+          <Link href="/" className="text-cyan-400 hover:text-cyan-300">
             Return to Home
           </Link>
         </div>
@@ -237,10 +237,10 @@ export default function ServicePage({ params }: { params: Promise<{ service: str
       <Header />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-gray-950 via-purple-950/10 to-gray-950 pt-20">
+      <section className="relative overflow-hidden bg-gradient-to-br from-gray-950 via-cyan-950/10 to-gray-950 pt-20">
         <div className="absolute inset-0 overflow-hidden">
           <div className={`absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br ${service.gradient} opacity-20 rounded-full blur-3xl`} />
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent" />
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent" />
         </div>
 
         <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
@@ -389,12 +389,12 @@ export default function ServicePage({ params }: { params: Promise<{ service: str
                 key={tier.plan}
                 className={`p-8 rounded-2xl border transition-all ${
                   index === 1
-                    ? `bg-gradient-to-b from-gray-800 to-gray-800/50 border-purple-500/50 ring-1 ring-purple-500/20`
+                    ? `bg-gradient-to-b from-gray-800 to-gray-800/50 border-cyan-500/50 ring-1 ring-cyan-500/20`
                     : 'bg-gray-800/50 border-gray-700/50 hover:border-gray-600'
                 }`}
               >
                 {index === 1 && (
-                  <span className="inline-block px-3 py-1 text-xs font-medium text-purple-400 bg-purple-500/10 rounded-full mb-4">
+                  <span className="inline-block px-3 py-1 text-xs font-medium text-cyan-400 bg-cyan-500/10 rounded-full mb-4">
                     Most Popular
                   </span>
                 )}
@@ -428,7 +428,7 @@ export default function ServicePage({ params }: { params: Promise<{ service: str
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-br from-purple-900/20 via-gray-950 to-gray-950">
+      <section className="py-20 bg-gradient-to-br from-cyan-900/20 via-gray-950 to-gray-950">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white">
             Ready to get started with {service.name}?
@@ -439,13 +439,13 @@ export default function ServicePage({ params }: { params: Promise<{ service: str
           <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
             <Link
               href="/signup"
-              className="rounded-lg bg-purple-600 px-8 py-4 text-lg font-semibold text-white hover:bg-purple-500 transition-all shadow-lg shadow-purple-500/25"
+              className="rounded-lg bg-gradient-to-r from-cyan-500 to-teal-500 px-8 py-4 text-lg font-semibold text-white hover:from-cyan-400 hover:to-teal-400 transition-all shadow-lg shadow-cyan-500/25"
             >
               Start Free Trial
             </Link>
             <Link
               href="/pricing"
-              className="inline-flex items-center justify-center text-purple-400 font-semibold hover:text-purple-300"
+              className="inline-flex items-center justify-center text-cyan-400 font-semibold hover:text-cyan-300"
             >
               View All Pricing <ArrowRight className="ml-2 h-5 w-5" />
             </Link>

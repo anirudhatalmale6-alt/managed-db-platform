@@ -28,7 +28,7 @@ export default function Header() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <Link href="/" className="flex items-center gap-2">
-              <Database className="h-8 w-8 text-purple-500" />
+              <Database className="h-8 w-8 text-cyan-500" />
               <span className="text-xl font-bold text-white">CloudDB</span>
             </Link>
           </div>
@@ -61,7 +61,7 @@ export default function Header() {
                     <hr className="my-2 border-gray-800" />
                     <Link
                       href="/services"
-                      className="block px-4 py-3 text-purple-400 hover:text-purple-300 hover:bg-gray-800"
+                      className="block px-4 py-3 text-cyan-400 hover:text-cyan-300 hover:bg-gray-800"
                       onClick={() => setServicesOpen(false)}
                     >
                       View All Services →
@@ -91,7 +91,7 @@ export default function Header() {
             </Link>
             <Link
               href="/signup"
-              className="rounded-lg bg-purple-600 px-4 py-2 text-sm font-medium text-white hover:bg-purple-500 transition-colors"
+              className="rounded-lg bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 text-sm font-medium text-white hover:from-cyan-400 hover:to-teal-400 transition-colors"
             >
               Start Free
             </Link>
@@ -133,7 +133,7 @@ export default function Header() {
               <Link href="/login" className="text-sm font-medium text-gray-300 px-2">Sign in</Link>
               <Link
                 href="/signup"
-                className="rounded-lg bg-purple-600 px-4 py-2 text-sm font-medium text-white text-center"
+                className="rounded-lg bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 text-sm font-medium text-white text-center"
               >
                 Start Free
               </Link>
